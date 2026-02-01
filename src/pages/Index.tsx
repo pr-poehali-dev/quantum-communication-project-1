@@ -334,8 +334,8 @@ const Index = () => {
             Присоединяйтесь к тысячам разработчиков, которые строят будущее с AgentForge.
           </p>
           <button className="group px-10 py-5 bg-gradient-to-r from-accent to-accent/90 text-black rounded-full hover:shadow-2xl hover:shadow-accent/40 transition-all font-bold text-lg flex items-center gap-3 mx-auto">
-            Начать бесплатно
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
+            Начать играть
+            <Icon name="ArrowRight" size={20} className="group-hover:translate-x-1 transition" />
           </button>
         </div>
       </section>
