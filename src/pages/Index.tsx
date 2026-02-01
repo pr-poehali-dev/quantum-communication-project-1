@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Zap, Lock, TrendingUp, Cpu, Settings, Cloud, ArrowRight } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>({});
@@ -38,7 +38,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
           <div className="flex items-center">
             <div className="font-display font-bold text-2xl tracking-tighter bg-gradient-to-r from-white via-accent to-accent/80 bg-clip-text text-transparent">
-              AgentForge
+              Дурак Онлайн
             </div>
           </div>
           <nav className="hidden md:flex gap-10 text-sm font-medium">
@@ -78,41 +78,40 @@ const Index = () => {
             >
               <div className="mb-8 inline-block">
                 <span className="text-xs font-medium tracking-widest text-accent/80 uppercase">
-                  AI-инфраструктура нового поколения
+                  Легендарная карточная игра
                 </span>
               </div>
               <h1 className="text-6xl lg:text-7xl font-display font-black leading-tight mb-8 tracking-tighter">
                 <span className="bg-gradient-to-br from-white via-white to-accent/40 bg-clip-text text-transparent">
-                  Создавай. Запускай.
+                  Играй. Побеждай.
                 </span>
                 <br />
-                <span className="text-accent">Автоматизируй.</span>
+                <span className="text-accent">Управляй кланом.</span>
               </h1>
               <p className="text-xl text-white/80 leading-relaxed mb-10 max-w-xl font-light">
-                AgentForge позволяет создавать, разворачивать и масштабировать умных AI-агентов.
-                От идеи до продакшена за минуты, а не месяцы.
+                Дурак Онлайн — это не просто игра. Создавай свой клан, сражайся с магом-ботом, зарабатывай бонусы и выводи выигрыши на карту. Прокачивай титул и стань легендой!
               </p>
               <div className="flex gap-4 mb-12 flex-col sm:flex-row">
                 <button className="group px-8 py-4 bg-gradient-to-r from-accent to-accent/90 text-black rounded-full hover:shadow-2xl hover:shadow-accent/50 transition-all font-semibold text-lg flex items-center gap-3 justify-center">
-                  Запустить сейчас
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition" />
+                  Начать играть
+                  <Icon name="ArrowRight" size={20} />
                 </button>
                 <button className="px-8 py-4 border border-accent/40 rounded-full hover:border-accent/70 hover:bg-accent/10 transition-all font-medium text-lg text-white">
-                  Смотреть демо
+                  Посмотреть геймплей
                 </button>
               </div>
               <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
                 <div>
-                  <div className="text-2xl font-bold text-accent mb-2">10 000+</div>
-                  <p className="text-sm text-white/60">Активных агентов</p>
+                  <div className="text-2xl font-bold text-accent mb-2">50 000+</div>
+                  <p className="text-sm text-white/60">Активных игроков</p>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-white mb-2">500 000+</div>
-                  <p className="text-sm text-white/60">Выполненных задач</p>
+                  <div className="text-2xl font-bold text-white mb-2">1 000 000+</div>
+                  <p className="text-sm text-white/60">Сыгранных партий</p>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-accent mb-2">99.99%</div>
-                  <p className="text-sm text-white/60">Аптайм</p>
+                  <div className="text-2xl font-bold text-accent mb-2">24/7</div>
+                  <p className="text-sm text-white/60">Онлайн поддержка</p>
                 </div>
               </div>
             </div>
@@ -148,37 +147,36 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: Zap,
-                title: "Молниеносный деплой",
-                desc: "Развертывание в продакшен одним кликом без настройки",
+                icon: "Users",
+                title: "Создай свой клан",
+                desc: "Объединяйся с друзьями, создавай клан и соревнуйся за первое место в рейтинге",
               },
               {
-                icon: Cpu,
-                title: "Умный AI-движок",
-                desc: "Продвинутые возможности рассуждения, которые учатся и адаптируются",
+                icon: "Sparkles",
+                title: "Маг-бот в чате",
+                desc: "Общайся с магическим ботом, бросай ему вызов на дуэль и получай бонусы",
               },
               {
-                icon: TrendingUp,
-                title: "Автомасштабирование",
-                desc: "Автоматическое масштабирование ресурсов на основе нагрузки",
+                icon: "Trophy",
+                title: "Рейтинг и титулы",
+                desc: "Зарабатывай очки за победы, получай эксклюзивные титулы и становись легендой",
               },
               {
-                icon: Lock,
-                title: "Корпоративная безопасность",
-                desc: "Банковское шифрование и соответствие SOC2, GDPR, HIPAA",
+                icon: "CreditCard",
+                title: "Вывод выигрышей",
+                desc: "Выводи заработанные средства на карту или номер телефона — быстро и безопасно",
               },
               {
-                icon: Settings,
-                title: "Гибкие сценарии",
-                desc: "Создавайте сложные цепочки автоматизации в визуальном редакторе",
+                icon: "ShoppingBag",
+                title: "Клановый магазин",
+                desc: "Покупай красивые рубашки карт, ушки, молотки и свинки для прокачки клана",
               },
               {
-                icon: Cloud,
-                title: "Мультиоблачность",
-                desc: "Разворачивайте где угодно - AWS, Azure, GCP или своя инфраструктура",
+                icon: "Gift",
+                title: "VIP-бонусы",
+                desc: "Получай бонусные рубашки, подарки и привилегии при выигрышах с VIP-статусом",
               },
             ].map((item, i) => {
-              const Icon = item.icon;
               const isVisible = visibleSections["features"];
               return (
                 <div
@@ -188,7 +186,7 @@ const Index = () => {
                   }`}
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
-                  <Icon className="w-10 h-10 mb-6 text-accent group-hover:scale-110 transition-transform" />
+                  <Icon name={item.icon} size={40} className="mb-6 text-accent group-hover:scale-110 transition-transform" />
                   <h3 className="font-display font-bold text-xl mb-3">{item.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
@@ -204,20 +202,20 @@ const Index = () => {
           <div
             className={`text-center mb-20 transition-all duration-1000 ${visibleSections["how"] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
-            <span className="text-xs font-medium tracking-widest text-accent/60 uppercase">Процесс</span>
+            <span className="text-xs font-medium tracking-widest text-accent/60 uppercase">Как начать</span>
             <h2 className="text-5xl lg:text-6xl font-display font-black tracking-tighter mt-4">
               <span className="bg-gradient-to-r from-white via-white to-accent/40 bg-clip-text text-transparent">
-                От нуля до героя
+                Путь к победам
               </span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { num: "01", title: "Проектируй", desc: "Определите возможности агента в интуитивном конструкторе" },
-              { num: "02", title: "Обучай", desc: "Загрузите данные и примеры для настройки поведения" },
-              { num: "03", title: "Запускай", desc: "Запуск в продакшен одним кликом" },
-              { num: "04", title: "Масштабируй", desc: "Автомасштабирование обрабатывает миллионы запросов" },
+              { num: "01", title: "Регистрируйся", desc: "Создай аккаунт и получи приветственные бонусы для старта" },
+              { num: "02", title: "Создай клан", desc: "Объединяйся с друзьями или вступай в топовый клан" },
+              { num: "03", title: "Играй и побеждай", desc: "Сражайся с игроками или магом-ботом, зарабатывай очки" },
+              { num: "04", title: "Выводи выигрыши", desc: "Получай деньги на карту или телефон мгновенно" },
             ].map((step, i) => {
               const isVisible = visibleSections["how"];
               return (
@@ -256,7 +254,7 @@ const Index = () => {
             <span className="text-xs font-medium tracking-widest text-accent/60 uppercase">Тарифы</span>
             <h2 className="text-5xl lg:text-6xl font-display font-black tracking-tighter mt-4">
               <span className="bg-gradient-to-r from-white via-white to-accent/40 bg-clip-text text-transparent">
-                Простые цены
+                Выбери свой уровень
               </span>
             </h2>
           </div>
@@ -264,15 +262,15 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Стартовый",
+                name: "Базовый",
                 price: "4 900 \u20bd/\u043c\u0435\u0441",
-                features: ["До 10 агентов", "100 000 запросов/месяц", "Поддержка сообщества", "Базовая аналитика"],
+                features: ["Базовые рубашки карт", "Доступ к общему чату", "Создание клана", "Вывод от 1000 ₽"],
                 highlight: false,
               },
               {
-                name: "Корпоративный",
-                price: "По запросу",
-                features: ["Безлимитные агенты", "Безлимитные запросы", "Поддержка 24/7", "Индивидуальные интеграции"],
+                name: "VIP",
+                price: "490 ₽/мес",
+                features: ["Эксклюзивные рубашки", "Бонусные подарки", "Приоритетная поддержка", "Титулы и ушки", "Вывод от 500 ₽"],
                 highlight: true,
               },
             ].map((plan, i) => {
@@ -299,7 +297,7 @@ const Index = () => {
                       <ul className="space-y-4 mb-10">
                         {plan.features.map((f, j) => (
                           <li key={j} className="flex gap-3 text-sm items-start">
-                            <ArrowRight className="w-4 h-4 text-accent flex-shrink-0 mt-1" />
+                            <Icon name="Check" size={16} className="text-accent flex-shrink-0 mt-1" />
                             <span className="text-foreground/80">{f}</span>
                           </li>
                         ))}
@@ -312,7 +310,7 @@ const Index = () => {
                           : "border border-accent/20 hover:border-accent/40 hover:bg-accent/5"
                       }`}
                     >
-                      {plan.highlight ? "Связаться с нами" : "Попробовать бесплатно"}
+                      {plan.highlight ? "Оформить VIP" : "Начать играть"}
                     </button>
                   </div>
                 </div>
